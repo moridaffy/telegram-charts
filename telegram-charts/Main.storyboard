@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qo-Hj-FMJ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Charts View Controller-->
+        <scene sceneID="qNN-2O-4YC">
+            <objects>
+                <viewController id="mIj-gD-qHh" customClass="ChartsViewController" customModule="telegram_charts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tzq-az-xot">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Vet-Ia-GcG">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vet-Ia-GcG" firstAttribute="leading" secondItem="vtu-pw-ba8" secondAttribute="leading" id="eQP-Dg-RAd"/>
+                            <constraint firstItem="vtu-pw-ba8" firstAttribute="trailing" secondItem="Vet-Ia-GcG" secondAttribute="trailing" id="s0d-sV-0ls"/>
+                            <constraint firstItem="Vet-Ia-GcG" firstAttribute="top" secondItem="vtu-pw-ba8" secondAttribute="top" id="sV6-b4-rnT"/>
+                            <constraint firstAttribute="bottom" secondItem="Vet-Ia-GcG" secondAttribute="bottom" id="xdI-uj-eNS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vtu-pw-ba8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4nd-e0-bJ8"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vet-Ia-GcG" id="t7v-gw-5eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IZ-vm-brE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="42.857142857142861"/>
+        </scene>
+        <!--Root Navigation Controller-->
+        <scene sceneID="o61-QU-Qn5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Qo-Hj-FMJ" customClass="RootNavigationController" customModule="telegram_charts" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vje-Pf-AGT">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mIj-gD-qHh" kind="relationship" relationship="rootViewController" id="bM5-a9-BkK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdk-jg-MpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208.80000000000001" y="42.728635682158924"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58A4223548C400D6AD7B /* AppDelegate.swift */; };
+		0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AB223548C500D6AD7B /* Assets.xcassets */; };
+		0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */; };
+		0CAC58C122354D6F00D6AD7B /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58C022354D6F00D6AD7B /* ChartsViewController.swift */; };
+		0CAC58C522354DAE00D6AD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58C422354DAE00D6AD7B /* Main.storyboard */; };
+		0CAC58C822354DE800D6AD7B /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58C722354DE800D6AD7B /* RootNavigationController.swift */; };
+		0CAC58CA22354EC200D6AD7B /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58C922354EC200D6AD7B /* SettingsManager.swift */; };
+		0CAC58CE223550A800D6AD7B /* ThemeModeTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58CC223550A800D6AD7B /* ThemeModeTableCellView.swift */; };
+		0CAC58CF223550A800D6AD7B /* ThemeModeTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58CD223550A800D6AD7B /* ThemeModeTableCellView.xib */; };
+		0CAC58D2223551F900D6AD7B /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58D1223551F900D6AD7B /* UIColor+CustomColors.swift */; };
+		0CAC58D42235657A00D6AD7B /* Date+UnixTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */; };
+		0CAC58D82235670400D6AD7B /* ChartLineTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58D62235670400D6AD7B /* ChartLineTableCellView.swift */; };
+		0CAC58D92235670400D6AD7B /* ChartLineTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58D72235670400D6AD7B /* ChartLineTableCellView.xib */; };
+		0CAC58DB2235702E00D6AD7B /* ChartLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58DA2235702E00D6AD7B /* ChartLine.swift */; };
+		0CAC58DF2235738800D6AD7B /* ChartTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58DD2235738800D6AD7B /* ChartTableCellView.swift */; };
+		0CAC58E02235738800D6AD7B /* ChartTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58DE2235738800D6AD7B /* ChartTableCellView.xib */; };
+		0CAC58E2223573A500D6AD7B /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58E1223573A500D6AD7B /* Chart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CAC58A1223548C400D6AD7B /* telegram-charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "telegram-charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAC58A4223548C400D6AD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CAC58AB223548C500D6AD7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CAC58AE223548C500D6AD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CAC58B0223548C500D6AD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAC58C022354D6F00D6AD7B /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		0CAC58C422354DAE00D6AD7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0CAC58C722354DE800D6AD7B /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		0CAC58C922354EC200D6AD7B /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		0CAC58CC223550A800D6AD7B /* ThemeModeTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModeTableCellView.swift; sourceTree = "<group>"; };
+		0CAC58CD223550A800D6AD7B /* ThemeModeTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeModeTableCellView.xib; sourceTree = "<group>"; };
+		0CAC58D1223551F900D6AD7B /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
+		0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+UnixTimestamp.swift"; sourceTree = "<group>"; };
+		0CAC58D62235670400D6AD7B /* ChartLineTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLineTableCellView.swift; sourceTree = "<group>"; };
+		0CAC58D72235670400D6AD7B /* ChartLineTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartLineTableCellView.xib; sourceTree = "<group>"; };
+		0CAC58DA2235702E00D6AD7B /* ChartLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLine.swift; sourceTree = "<group>"; };
+		0CAC58DD2235738800D6AD7B /* ChartTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableCellView.swift; sourceTree = "<group>"; };
+		0CAC58DE2235738800D6AD7B /* ChartTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartTableCellView.xib; sourceTree = "<group>"; };
+		0CAC58E1223573A500D6AD7B /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CAC589E223548C400D6AD7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CAC5898223548C400D6AD7B = {
+			isa = PBXGroup;
+			children = (
+				0CAC58A3223548C400D6AD7B /* telegram-charts */,
+				0CAC58A2223548C400D6AD7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CAC58A2223548C400D6AD7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58A1223548C400D6AD7B /* telegram-charts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CAC58A3223548C400D6AD7B /* telegram-charts */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58A4223548C400D6AD7B /* AppDelegate.swift */,
+				0CAC58BC22354A4900D6AD7B /* Views */,
+				0CAC58B622354A0700D6AD7B /* ViewControllers */,
+				0CAC58BD22354A4E00D6AD7B /* Managers */,
+				0CAC58D0223551A500D6AD7B /* Models */,
+				0CAC58BE22354A9000D6AD7B /* Extensions */,
+				0CAC58AB223548C500D6AD7B /* Assets.xcassets */,
+				0CAC58C422354DAE00D6AD7B /* Main.storyboard */,
+				0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */,
+				0CAC58B0223548C500D6AD7B /* Info.plist */,
+			);
+			path = "telegram-charts";
+			sourceTree = "<group>";
+		};
+		0CAC58B622354A0700D6AD7B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58C722354DE800D6AD7B /* RootNavigationController.swift */,
+				0CAC58C022354D6F00D6AD7B /* ChartsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CAC58BC22354A4900D6AD7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58DC2235736F00D6AD7B /* ChartTableCell */,
+				0CAC58D5223566EA00D6AD7B /* ChartLineTableCell */,
+				0CAC58CB2235507E00D6AD7B /* ThemeModeTableCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CAC58BD22354A4E00D6AD7B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58C922354EC200D6AD7B /* SettingsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0CAC58BE22354A9000D6AD7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58D1223551F900D6AD7B /* UIColor+CustomColors.swift */,
+				0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CAC58CB2235507E00D6AD7B /* ThemeModeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58CD223550A800D6AD7B /* ThemeModeTableCellView.xib */,
+				0CAC58CC223550A800D6AD7B /* ThemeModeTableCellView.swift */,
+			);
+			path = ThemeModeTableCell;
+			sourceTree = "<group>";
+		};
+		0CAC58D0223551A500D6AD7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58E1223573A500D6AD7B /* Chart.swift */,
+				0CAC58DA2235702E00D6AD7B /* ChartLine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CAC58D5223566EA00D6AD7B /* ChartLineTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58D72235670400D6AD7B /* ChartLineTableCellView.xib */,
+				0CAC58D62235670400D6AD7B /* ChartLineTableCellView.swift */,
+			);
+			path = ChartLineTableCell;
+			sourceTree = "<group>";
+		};
+		0CAC58DC2235736F00D6AD7B /* ChartTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC58DE2235738800D6AD7B /* ChartTableCellView.xib */,
+				0CAC58DD2235738800D6AD7B /* ChartTableCellView.swift */,
+			);
+			path = ChartTableCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CAC58A0223548C400D6AD7B /* telegram-charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAC58B3223548C500D6AD7B /* Build configuration list for PBXNativeTarget "telegram-charts" */;
+			buildPhases = (
+				0CAC589D223548C400D6AD7B /* Sources */,
+				0CAC589E223548C400D6AD7B /* Frameworks */,
+				0CAC589F223548C400D6AD7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "telegram-charts";
+			productName = "telegram-charts";
+			productReference = 0CAC58A1223548C400D6AD7B /* telegram-charts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CAC5899223548C400D6AD7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MSKR;
+				TargetAttributes = {
+					0CAC58A0223548C400D6AD7B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0CAC589C223548C400D6AD7B /* Build configuration list for PBXProject "telegram-charts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CAC5898223548C400D6AD7B;
+			productRefGroup = 0CAC58A2223548C400D6AD7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CAC58A0223548C400D6AD7B /* telegram-charts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CAC589F223548C400D6AD7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAC58E02235738800D6AD7B /* ChartTableCellView.xib in Resources */,
+				0CAC58C522354DAE00D6AD7B /* Main.storyboard in Resources */,
+				0CAC58D92235670400D6AD7B /* ChartLineTableCellView.xib in Resources */,
+				0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */,
+				0CAC58CF223550A800D6AD7B /* ThemeModeTableCellView.xib in Resources */,
+				0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CAC589D223548C400D6AD7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */,
+				0CAC58DB2235702E00D6AD7B /* ChartLine.swift in Sources */,
+				0CAC58CA22354EC200D6AD7B /* SettingsManager.swift in Sources */,
+				0CAC58E2223573A500D6AD7B /* Chart.swift in Sources */,
+				0CAC58C822354DE800D6AD7B /* RootNavigationController.swift in Sources */,
+				0CAC58CE223550A800D6AD7B /* ThemeModeTableCellView.swift in Sources */,
+				0CAC58D82235670400D6AD7B /* ChartLineTableCellView.swift in Sources */,
+				0CAC58D2223551F900D6AD7B /* UIColor+CustomColors.swift in Sources */,
+				0CAC58D42235657A00D6AD7B /* Date+UnixTimestamp.swift in Sources */,
+				0CAC58DF2235738800D6AD7B /* ChartTableCellView.swift in Sources */,
+				0CAC58C122354D6F00D6AD7B /* ChartsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAC58AE223548C500D6AD7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CAC58B1223548C500D6AD7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CAC58B2223548C500D6AD7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CAC58B4223548C500D6AD7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCD2MCUEP4;
+				INFOPLIST_FILE = "telegram-charts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mskr.telegram-charts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0CAC58B5223548C500D6AD7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCD2MCUEP4;
+				INFOPLIST_FILE = "telegram-charts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mskr.telegram-charts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CAC589C223548C400D6AD7B /* Build configuration list for PBXProject "telegram-charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAC58B1223548C500D6AD7B /* Debug */,
+				0CAC58B2223548C500D6AD7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAC58B3223548C500D6AD7B /* Build configuration list for PBXNativeTarget "telegram-charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAC58B4223548C500D6AD7B /* Debug */,
+				0CAC58B5223548C500D6AD7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CAC5899223548C400D6AD7B /* Project object */;
+}
