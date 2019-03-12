@@ -11,7 +11,9 @@ import UIKit
 class ChartTableCellView: UITableViewCell {
   
   @IBOutlet private weak var chartView: UIView!
-  @IBOutlet private weak var selectorView: UIView!
+  @IBOutlet private weak var selectorView: AreaSelectorView!
+  @IBOutlet private weak var chartViewLeadingConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var chartViewTrailingConstraint: NSLayoutConstraint!
   
   private var chart: Chart!
   
@@ -27,10 +29,18 @@ class ChartTableCellView: UITableViewCell {
     selectionStyle = .none
     chartView.backgroundColor = UIColor.clear
     selectorView.backgroundColor = UIColor.clear
+    
+    selectorView.setup(delegate: self, padding: UIEdgeInsets(top: 0.0, left: chartViewLeadingConstraint.constant,
+                                                             bottom: 0.0, right: chartViewTrailingConstraint.constant))
   }
   
   @objc private func updateTheme() {
     backgroundColor = UIColor.additionalCell
   }
-  
+}
+
+extension ChartTableCellView: AreaSelectorViewDelegate {
+  func didChangeArea(start: Double, finish: Double) {
+    print("start: \(start) finish: \(finish)")
+  }
 }

@@ -18,24 +18,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="359.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-iq-gXN">
-                        <rect key="frame" x="0.0" y="309.5" width="375" height="50"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-iq-gXN" customClass="AreaSelectorView" customModule="telegram_charts" customModuleProvider="target">
+                        <rect key="frame" x="8" y="309.5" width="359" height="50"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="tUB-Ci-H1T"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-83-ejm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="309.5"/>
+                        <rect key="frame" x="8" y="0.0" width="359" height="309.5"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="bMf-83-ejm" secondAttribute="trailing" id="4nR-Mg-Tcd"/>
-                    <constraint firstItem="rbd-iq-gXN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Ej-5p-Sg7"/>
-                    <constraint firstItem="bMf-83-ejm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9k7-tO-h3V"/>
+                    <constraint firstAttribute="trailing" secondItem="bMf-83-ejm" secondAttribute="trailing" constant="8" id="4nR-Mg-Tcd"/>
+                    <constraint firstItem="bMf-83-ejm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9k7-tO-h3V"/>
+                    <constraint firstItem="rbd-iq-gXN" firstAttribute="leading" secondItem="bMf-83-ejm" secondAttribute="leading" id="ELr-bc-bEE"/>
                     <constraint firstAttribute="bottom" secondItem="rbd-iq-gXN" secondAttribute="bottom" id="Gq0-ER-qI5"/>
-                    <constraint firstAttribute="trailing" secondItem="rbd-iq-gXN" secondAttribute="trailing" id="te5-Vw-b6U"/>
+                    <constraint firstItem="rbd-iq-gXN" firstAttribute="trailing" secondItem="bMf-83-ejm" secondAttribute="trailing" id="jEj-Tx-zS3"/>
                     <constraint firstItem="bMf-83-ejm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uGh-jm-i9O"/>
                     <constraint firstItem="rbd-iq-gXN" firstAttribute="top" secondItem="bMf-83-ejm" secondAttribute="bottom" id="voc-Bo-Ev7"/>
                 </constraints>
@@ -43,6 +43,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="chartView" destination="bMf-83-ejm" id="bDq-Of-R9N"/>
+                <outlet property="chartViewLeadingConstraint" destination="9k7-tO-h3V" id="lyA-pW-G9Q"/>
+                <outlet property="chartViewTrailingConstraint" destination="4nR-Mg-Tcd" id="IeK-e8-SJm"/>
                 <outlet property="selectorView" destination="rbd-iq-gXN" id="TN0-GF-Xbr"/>
             </connections>
         </tableViewCell>

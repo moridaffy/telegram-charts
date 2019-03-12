@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75CB0D223797A400024776 /* AreaSelectorView.swift */; };
+		0C75CB11223797BE00024776 /* AreaSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75CB10223797BE00024776 /* AreaSelectorView.xib */; };
 		0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58A4223548C400D6AD7B /* AppDelegate.swift */; };
 		0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AB223548C500D6AD7B /* Assets.xcassets */; };
 		0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C75CB0D223797A400024776 /* AreaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaSelectorView.swift; sourceTree = "<group>"; };
+		0C75CB10223797BE00024776 /* AreaSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaSelectorView.xib; sourceTree = "<group>"; };
 		0CAC58A1223548C400D6AD7B /* telegram-charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "telegram-charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAC58A4223548C400D6AD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CAC58AB223548C500D6AD7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C75CB0F223797A800024776 /* AreaSelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				0C75CB10223797BE00024776 /* AreaSelectorView.xib */,
+				0C75CB0D223797A400024776 /* AreaSelectorView.swift */,
+			);
+			path = AreaSelectorView;
+			sourceTree = "<group>";
+		};
 		0CAC5898223548C400D6AD7B = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 				0CAC58DC2235736F00D6AD7B /* ChartTableCell */,
 				0CAC58D5223566EA00D6AD7B /* ChartLineTableCell */,
 				0CAC58CB2235507E00D6AD7B /* ThemeModeTableCell */,
+				0C75CB0F223797A800024776 /* AreaSelectorView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +242,7 @@
 				0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */,
 				0CAC58CF223550A800D6AD7B /* ThemeModeTableCellView.xib in Resources */,
 				0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */,
+				0C75CB11223797BE00024776 /* AreaSelectorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +255,7 @@
 			files = (
 				0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */,
 				0CAC58DB2235702E00D6AD7B /* ChartLine.swift in Sources */,
+				0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */,
 				0CAC58CA22354EC200D6AD7B /* SettingsManager.swift in Sources */,
 				0CAC58E2223573A500D6AD7B /* Chart.swift in Sources */,
 				0CAC58C822354DE800D6AD7B /* RootNavigationController.swift in Sources */,

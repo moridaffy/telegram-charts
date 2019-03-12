@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AreaSelectorView" customModule="telegram_charts" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="UhJ-cK-qRM"/>
+                <outlet property="leftGrabberImageView" destination="8xZ-yY-ObY" id="rsc-hh-phA"/>
+                <outlet property="rightGrabberImageView" destination="y1V-0V-pgN" id="PXW-gU-qCq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xZ-yY-ObY">
+                    <rect key="frame" x="0.0" y="0.0" width="15" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="0me-0k-u40"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y1V-0V-pgN">
+                    <rect key="frame" x="360" y="0.0" width="15" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="csF-aJ-bwk"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="y1V-0V-pgN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EgR-Iy-Kzp"/>
+                <constraint firstItem="y1V-0V-pgN" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="FoQ-DO-TMp"/>
+                <constraint firstAttribute="bottom" secondItem="y1V-0V-pgN" secondAttribute="bottom" id="HoO-ee-vf9"/>
+                <constraint firstItem="8xZ-yY-ObY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X9G-x8-Y0t"/>
+                <constraint firstAttribute="bottom" secondItem="8xZ-yY-ObY" secondAttribute="bottom" id="hQB-rU-ZPK"/>
+                <constraint firstItem="8xZ-yY-ObY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tlh-0W-kem"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
