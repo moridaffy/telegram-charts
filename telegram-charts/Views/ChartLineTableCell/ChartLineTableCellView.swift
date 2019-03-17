@@ -14,6 +14,10 @@ class ChartLineTableCellView: UITableViewCell {
   @IBOutlet private weak var titleLabel: UILabel!
   @IBOutlet private weak var checkImageView: UIImageView!
   
+  override func prepareForReuse() {
+    NotificationCenter.default.removeObserver(self)
+  }
+  
   private(set) var line: ChartLine!
   var enabled: Bool! {
     didSet {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C71BE41223E4A6000436370 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71BE40223E4A6000436370 /* UIViewController+Alerts.swift */; };
+		0C71BE43223E4B2200436370 /* ChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71BE42223E4B2200436370 /* ChartListViewController.swift */; };
+		0C71BE47223E54D600436370 /* ChartInfoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C71BE45223E54D600436370 /* ChartInfoCellView.swift */; };
+		0C71BE48223E54D600436370 /* ChartInfoCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C71BE46223E54D600436370 /* ChartInfoCellView.xib */; };
 		0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75CB0D223797A400024776 /* AreaSelectorView.swift */; };
 		0C75CB11223797BE00024776 /* AreaSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75CB10223797BE00024776 /* AreaSelectorView.xib */; };
 		0C75CB13223815D400024776 /* chart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C75CB12223815D400024776 /* chart_data.json */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C71BE40223E4A6000436370 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		0C71BE42223E4B2200436370 /* ChartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListViewController.swift; sourceTree = "<group>"; };
+		0C71BE45223E54D600436370 /* ChartInfoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInfoCellView.swift; sourceTree = "<group>"; };
+		0C71BE46223E54D600436370 /* ChartInfoCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartInfoCellView.xib; sourceTree = "<group>"; };
 		0C75CB0D223797A400024776 /* AreaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaSelectorView.swift; sourceTree = "<group>"; };
 		0C75CB10223797BE00024776 /* AreaSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaSelectorView.xib; sourceTree = "<group>"; };
 		0C75CB12223815D400024776 /* chart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chart_data.json; path = Reference/chart_data.json; sourceTree = SOURCE_ROOT; };
@@ -69,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C71BE44223E54AF00436370 /* ChartInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				0C71BE46223E54D600436370 /* ChartInfoCellView.xib */,
+				0C71BE45223E54D600436370 /* ChartInfoCellView.swift */,
+			);
+			path = ChartInfoCell;
+			sourceTree = "<group>";
+		};
 		0C75CB0F223797A800024776 /* AreaSelectorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				0CAC58C722354DE800D6AD7B /* RootNavigationController.swift */,
+				0C71BE42223E4B2200436370 /* ChartListViewController.swift */,
 				0CAC58C022354D6F00D6AD7B /* ChartsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -124,6 +142,7 @@
 		0CAC58BC22354A4900D6AD7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C71BE44223E54AF00436370 /* ChartInfoCell */,
 				0CAC58DC2235736F00D6AD7B /* ChartTableCell */,
 				0CAC58D5223566EA00D6AD7B /* ChartLineTableCell */,
 				0CAC58CB2235507E00D6AD7B /* ThemeModeTableCell */,
@@ -146,6 +165,7 @@
 			children = (
 				0CAC58D1223551F900D6AD7B /* UIColor+CustomColors.swift */,
 				0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */,
+				0C71BE40223E4A6000436370 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +273,7 @@
 				0CAC58CF223550A800D6AD7B /* ThemeModeTableCellView.xib in Resources */,
 				0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */,
 				0C75CB11223797BE00024776 /* AreaSelectorView.xib in Resources */,
+				0C71BE48223E54D600436370 /* ChartInfoCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */,
+				0C71BE41223E4A6000436370 /* UIViewController+Alerts.swift in Sources */,
 				0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */,
 				0CAC58CA22354EC200D6AD7B /* SettingsManager.swift in Sources */,
 				0C788B9D223D8DFF008B8DF2 /* ChartLine.swift in Sources */,
+				0C71BE43223E4B2200436370 /* ChartListViewController.swift in Sources */,
 				0CAC58C822354DE800D6AD7B /* RootNavigationController.swift in Sources */,
 				0CAC58CE223550A800D6AD7B /* ThemeModeTableCellView.swift in Sources */,
 				0CAC58D82235670400D6AD7B /* ChartLineTableCellView.swift in Sources */,
@@ -276,6 +299,7 @@
 				0C788B9B223D8D57008B8DF2 /* Chart.swift in Sources */,
 				0CAC58DF2235738800D6AD7B /* ChartTableCellView.swift in Sources */,
 				0C75CB152238163100024776 /* DataManager.swift in Sources */,
+				0C71BE47223E54D600436370 /* ChartInfoCellView.swift in Sources */,
 				0CAC58C122354D6F00D6AD7B /* ChartsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

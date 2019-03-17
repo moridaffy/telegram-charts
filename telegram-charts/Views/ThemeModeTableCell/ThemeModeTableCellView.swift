@@ -12,6 +12,10 @@ class ThemeModeTableCellView: UITableViewCell {
   
   @IBOutlet private weak var titleLabel: UILabel!
   
+  override func prepareForReuse() {
+    NotificationCenter.default.removeObserver(self)
+  }
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     setup()

@@ -11,8 +11,9 @@ import UIKit
 class Chart {
   
   let lines: [ChartLine]
+  let name: String
   
-  init(data: Any) throws {
+  init(data: Any, index: Int) throws {
     guard let chartData = data as? [String: Any] else { throw CustomError(message: NSLocalizedString("No chart data found", comment: "")) }
     guard let columnsData = chartData["columns"] as? [Any] else { throw CustomError(message: NSLocalizedString("No \"columns\" value found", comment: ""))}
     guard let colorsData = chartData["colors"] as? [String: String] else { throw CustomError(message: NSLocalizedString("No \"colors\" value found", comment: ""))}
@@ -46,6 +47,7 @@ class Chart {
       }
     }
     
+    self.name = NSLocalizedString("Chart", comment: "") + " #\(index + 1)"
     self.lines = newLines
   }
   

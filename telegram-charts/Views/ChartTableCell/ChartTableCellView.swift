@@ -17,6 +17,10 @@ class ChartTableCellView: UITableViewCell {
   
   private var chart: Chart!
   
+  override func prepareForReuse() {
+    NotificationCenter.default.removeObserver(self)
+  }
+  
   func setup(chart: Chart) {
     self.chart = chart
     

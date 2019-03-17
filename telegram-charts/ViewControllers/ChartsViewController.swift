@@ -12,12 +12,18 @@ class ChartsViewController: UIViewController {
   
   @IBOutlet private weak var tableView: UITableView!
   
+  private var chart: Chart!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupStyle()
     setupTableView()
     setupContent()
+  }
+  
+  func setup(chart: Chart) {
+    self.chart = chart
   }
   
   private func setupStyle() {
@@ -74,7 +80,7 @@ extension ChartsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return (section == 0) ? 3 : 1
+    return (section == 0) ? chart.lines.count : 1
   }
   
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -85,15 +91,12 @@ extension ChartsViewController: UITableViewDataSource {
     if indexPath.section == 0 {
       if indexPath.row == 0 {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartTableCellView.self)) as? ChartTableCellView else { fatalError() }
-        return cell
-      } else if indexPath.row == 1 {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartLineTableCellView.self)) as? ChartLineTableCellView else { fatalError() }
-        return cell
-      } else if indexPath.row == 2 {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartLineTableCellView.self)) as? ChartLineTableCellView else { fatalError() }
+        cell.setup(chart: chart)
         return cell
       } else {
-        fatalError()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartLineTableCellView.self)) as? ChartLineTableCellView else { fatalError() }
+        cell.setup(line: chart.lines[indexPath.row])
+        return cell
       }
     } else {
       guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ThemeModeTableCellView.self)) as? ThemeModeTableCellView else { fatalError() }

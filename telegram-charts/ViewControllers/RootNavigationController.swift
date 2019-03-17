@@ -20,6 +20,7 @@ class RootNavigationController: UINavigationController {
   }
   
   private func setup() {
+    interactivePopGestureRecognizer?.isEnabled = false
     navigationBar.isTranslucent = false
     NotificationCenter.default.addObserver(self, selector: #selector(updateTheme), name: Notification.Name(Keys.themeModeNotification), object: nil)
     updateTheme()
