@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75CB0D223797A400024776 /* AreaSelectorView.swift */; };
 		0C75CB11223797BE00024776 /* AreaSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75CB10223797BE00024776 /* AreaSelectorView.xib */; };
+		0C75CB13223815D400024776 /* chart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C75CB12223815D400024776 /* chart_data.json */; };
+		0C75CB152238163100024776 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75CB142238163100024776 /* DataManager.swift */; };
+		0C788B9B223D8D57008B8DF2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C788B9A223D8D57008B8DF2 /* Chart.swift */; };
+		0C788B9D223D8DFF008B8DF2 /* ChartLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C788B9C223D8DFF008B8DF2 /* ChartLine.swift */; };
+		0C788B9F223DA7CC008B8DF2 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C788B9E223DA7CC008B8DF2 /* CustomError.swift */; };
 		0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58A4223548C400D6AD7B /* AppDelegate.swift */; };
 		0CAC58AC223548C500D6AD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AB223548C500D6AD7B /* Assets.xcassets */; };
 		0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */; };
@@ -22,15 +27,18 @@
 		0CAC58D42235657A00D6AD7B /* Date+UnixTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */; };
 		0CAC58D82235670400D6AD7B /* ChartLineTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58D62235670400D6AD7B /* ChartLineTableCellView.swift */; };
 		0CAC58D92235670400D6AD7B /* ChartLineTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58D72235670400D6AD7B /* ChartLineTableCellView.xib */; };
-		0CAC58DB2235702E00D6AD7B /* ChartLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58DA2235702E00D6AD7B /* ChartLine.swift */; };
 		0CAC58DF2235738800D6AD7B /* ChartTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58DD2235738800D6AD7B /* ChartTableCellView.swift */; };
 		0CAC58E02235738800D6AD7B /* ChartTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC58DE2235738800D6AD7B /* ChartTableCellView.xib */; };
-		0CAC58E2223573A500D6AD7B /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC58E1223573A500D6AD7B /* Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C75CB0D223797A400024776 /* AreaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaSelectorView.swift; sourceTree = "<group>"; };
 		0C75CB10223797BE00024776 /* AreaSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaSelectorView.xib; sourceTree = "<group>"; };
+		0C75CB12223815D400024776 /* chart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = chart_data.json; path = Reference/chart_data.json; sourceTree = SOURCE_ROOT; };
+		0C75CB142238163100024776 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0C788B9A223D8D57008B8DF2 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		0C788B9C223D8DFF008B8DF2 /* ChartLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLine.swift; sourceTree = "<group>"; };
+		0C788B9E223DA7CC008B8DF2 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		0CAC58A1223548C400D6AD7B /* telegram-charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "telegram-charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAC58A4223548C400D6AD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CAC58AB223548C500D6AD7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,10 +54,8 @@
 		0CAC58D32235657A00D6AD7B /* Date+UnixTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+UnixTimestamp.swift"; sourceTree = "<group>"; };
 		0CAC58D62235670400D6AD7B /* ChartLineTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLineTableCellView.swift; sourceTree = "<group>"; };
 		0CAC58D72235670400D6AD7B /* ChartLineTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartLineTableCellView.xib; sourceTree = "<group>"; };
-		0CAC58DA2235702E00D6AD7B /* ChartLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLine.swift; sourceTree = "<group>"; };
 		0CAC58DD2235738800D6AD7B /* ChartTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableCellView.swift; sourceTree = "<group>"; };
 		0CAC58DE2235738800D6AD7B /* ChartTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartTableCellView.xib; sourceTree = "<group>"; };
-		0CAC58E1223573A500D6AD7B /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 				0CAC58AB223548C500D6AD7B /* Assets.xcassets */,
 				0CAC58C422354DAE00D6AD7B /* Main.storyboard */,
 				0CAC58AD223548C500D6AD7B /* LaunchScreen.storyboard */,
+				0C75CB12223815D400024776 /* chart_data.json */,
 				0CAC58B0223548C500D6AD7B /* Info.plist */,
 			);
 			path = "telegram-charts";
@@ -128,6 +135,7 @@
 		0CAC58BD22354A4E00D6AD7B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0C75CB142238163100024776 /* DataManager.swift */,
 				0CAC58C922354EC200D6AD7B /* SettingsManager.swift */,
 			);
 			path = Managers;
@@ -154,8 +162,9 @@
 		0CAC58D0223551A500D6AD7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0CAC58E1223573A500D6AD7B /* Chart.swift */,
-				0CAC58DA2235702E00D6AD7B /* ChartLine.swift */,
+				0C788B9E223DA7CC008B8DF2 /* CustomError.swift */,
+				0C788B9A223D8D57008B8DF2 /* Chart.swift */,
+				0C788B9C223D8DFF008B8DF2 /* ChartLine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			files = (
 				0CAC58E02235738800D6AD7B /* ChartTableCellView.xib in Resources */,
 				0CAC58C522354DAE00D6AD7B /* Main.storyboard in Resources */,
+				0C75CB13223815D400024776 /* chart_data.json in Resources */,
 				0CAC58D92235670400D6AD7B /* ChartLineTableCellView.xib in Resources */,
 				0CAC58AF223548C500D6AD7B /* LaunchScreen.storyboard in Resources */,
 				0CAC58CF223550A800D6AD7B /* ThemeModeTableCellView.xib in Resources */,
@@ -254,16 +264,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAC58A5223548C400D6AD7B /* AppDelegate.swift in Sources */,
-				0CAC58DB2235702E00D6AD7B /* ChartLine.swift in Sources */,
 				0C75CB0E223797A400024776 /* AreaSelectorView.swift in Sources */,
 				0CAC58CA22354EC200D6AD7B /* SettingsManager.swift in Sources */,
-				0CAC58E2223573A500D6AD7B /* Chart.swift in Sources */,
+				0C788B9D223D8DFF008B8DF2 /* ChartLine.swift in Sources */,
 				0CAC58C822354DE800D6AD7B /* RootNavigationController.swift in Sources */,
 				0CAC58CE223550A800D6AD7B /* ThemeModeTableCellView.swift in Sources */,
 				0CAC58D82235670400D6AD7B /* ChartLineTableCellView.swift in Sources */,
+				0C788B9F223DA7CC008B8DF2 /* CustomError.swift in Sources */,
 				0CAC58D2223551F900D6AD7B /* UIColor+CustomColors.swift in Sources */,
 				0CAC58D42235657A00D6AD7B /* Date+UnixTimestamp.swift in Sources */,
+				0C788B9B223D8D57008B8DF2 /* Chart.swift in Sources */,
 				0CAC58DF2235738800D6AD7B /* ChartTableCellView.swift in Sources */,
+				0C75CB152238163100024776 /* DataManager.swift in Sources */,
 				0CAC58C122354D6F00D6AD7B /* ChartsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

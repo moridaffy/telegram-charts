@@ -2,7 +2,7 @@
 //  ChartLine.swift
 //  telegram-charts
 //
-//  Created by Максим Скрябин on 10/03/2019.
+//  Created by Максим Скрябин on 16/03/2019.
 //  Copyright © 2019 MSKR. All rights reserved.
 //
 
@@ -11,11 +11,22 @@ import UIKit
 class ChartLine {
   
   let name: String
+  let values: [Int]
+  let type: LineType
   let color: UIColor
   
-  init(name: String, colorCode: String) {
+  init(name: String, values: [Int], typeValue: String, color: UIColor) {
     self.name = name
-    self.color = UIColor(hex: colorCode)
+    self.values = values
+    self.type = LineType(rawValue: typeValue) ?? .unknown
+    self.color = color
   }
-  
+}
+
+extension ChartLine {
+  enum LineType: String {
+    case unknown
+    case line
+    case x
+  }
 }

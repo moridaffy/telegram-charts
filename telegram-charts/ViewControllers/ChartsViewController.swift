@@ -42,10 +42,6 @@ class ChartsViewController: UIViewController {
     tableView.backgroundColor = UIColor.additionalBackground
     tableView.separatorColor = UIColor.additionalChartLines
   }
-  
-  // TODO: убрать
-  var line1 = ChartLine(name: "Joined Channel", colorCode: "4BD964")
-  var line2 = ChartLine(name: "Left Channel", colorCode: "FE3C30")
 }
 
 extension ChartsViewController: UITableViewDelegate {
@@ -89,15 +85,12 @@ extension ChartsViewController: UITableViewDataSource {
     if indexPath.section == 0 {
       if indexPath.row == 0 {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartTableCellView.self)) as? ChartTableCellView else { fatalError() }
-        cell.setup(chart: Chart(lines: [line1, line2]))
         return cell
       } else if indexPath.row == 1 {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartLineTableCellView.self)) as? ChartLineTableCellView else { fatalError() }
-        cell.setup(line: line1)
         return cell
       } else if indexPath.row == 2 {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ChartLineTableCellView.self)) as? ChartLineTableCellView else { fatalError() }
-        cell.setup(line: line2)
         return cell
       } else {
         fatalError()
